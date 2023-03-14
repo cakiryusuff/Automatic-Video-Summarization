@@ -4,7 +4,7 @@ This Algorithm, Capturing frames from videos like this,
 <img src="Automatic-Video-Summarization/readmePic/frames.PNG" />
 and making summarized new video.
 
-You can change parameters.
+# Parameters
 ```c++
 VideoCapture cap("Video.mp4"); //video to summarize
 
