@@ -5,10 +5,8 @@
 using namespace std;
 using namespace cv;
 
-int main(int argc, char** argv)
+int main()
 {
-    CommandLineParser parser();
-
     VideoCapture cap("Video.mp4");
     if (!cap.isOpened())
         return -1;
@@ -44,7 +42,9 @@ int main(int argc, char** argv)
         waitKey(1);
         prev_frame = frame;
     }
-    
+
+
+    // This part for make video from captured frames
     video_name = "my_video.avi";
     VideoWriter video_writer(video_name, VideoWriter::fourcc('M', 'J', 'P', 'G'), 10, prev_frame.size());
 
